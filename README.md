@@ -18,7 +18,7 @@ Copy /lib/ti.twillio.js to your /lib folder
   * AccountSID, APISID, & APISecret = All {strings} from your Twillio Account
   * timeout = {integer} to define API timeout in milliseconds
   * FROM_PhoneNumber = {string} in E.164 format of phone # to send message FROM (ie. +15005550006')
-  > **NOTE**: passed in must match the API Key Environment (as mentioned above)
+  > **NOTE**: FROM_PhoneNumber passed in must match the API Key Environment (as mentioned above)
   ```javascript
   var twillioClient = require('ti.twillio');
   twillioClient.init('AccountSID', 'APISID', 'APISecret', 'FROM_PhoneNumber', timeout);
